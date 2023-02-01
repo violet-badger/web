@@ -1,6 +1,7 @@
 from flask import Flask, render_template
+from waitress import serve
 
-index = Flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/')
@@ -19,4 +20,4 @@ def blog():
 
 
 if __name__ == '__main__':
-    app.run()
+    serve(app, host="127.0.0.1", port=8080)
