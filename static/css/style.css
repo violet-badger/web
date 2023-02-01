@@ -48,6 +48,12 @@ body {
     justify-content: space-between;
 }
 
+.page-text-wrapper {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 .page-text {
     color: white;
 }
