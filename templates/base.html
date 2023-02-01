@@ -7,21 +7,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=../static/css/style.css>
 
-    <title>{% block title %} {% endblock %}</title>
+      <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url_for('index')}}">Personal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            </ul>
+        <a class="navbar-brand" href="{{ url_for('index')}}">🐱</a>
+        <div class="navbar-buttons">
+            <div>
+                <a class="nav-link" href=about>About</a>
+            </div>
+            <div>
+                <a id="github-link" href="https://github.com/violet-badger" target="_blank">
+                    <img class="social-icons" src="../static/assets/github.png"/>
+                </a>
+                <a id=linkedin-link" href="https://linkedin.com/in/xthinh" target="_blank">
+                    <img class="social-icons" src="../static/assets/linkedin.jpg"/>
+                </a>
+                <a id="resume" href="../static/assets/LeThinh2023.pdf" target="_blank">
+                    <img class="social-icons" src="../static/assets/resume_icon.png"/>
+                </a>
+            </div>
         </div>
     </nav>
     <div class="container">
