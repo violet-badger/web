@@ -14,5 +14,4 @@ vercel.
 `python index.py`
 
 ### How to deploy
-`vercel`
 `vercel --prod`
